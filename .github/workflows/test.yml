@@ -19,7 +19,11 @@ jobs:
         run: brew tap In-sp3ctr3/tap "$GITHUB_WORKSPACE"
 
       - name: Audit cask
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ github.token }}
         run: brew audit --cask --new In-sp3ctr3/tap/clack
 
       - name: Fetch cask artifact
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ github.token }}
         run: brew fetch --cask In-sp3ctr3/tap/clack
