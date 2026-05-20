@@ -1,6 +1,6 @@
 cask "clack" do
-  version "0.1.0-alpha.9,2026-05-20"
-  sha256 "af0f9647c33870543f5935ca73c16e2d0bdfbb4cbfc6053c8c445ff65ebd6aec"
+  version "0.1.0-alpha.10,2026-05-20"
+  sha256 "4f2a6bd2c6f951ce1c6570fd04c79329486151744fb39cf03382ee293ab815bf"
 
   url "https://github.com/In-sp3ctr3/clack/releases/download/v#{version.csv.first}/Clack-#{version.csv.first}-#{version.csv.second}.dmg"
   name "Clack"
